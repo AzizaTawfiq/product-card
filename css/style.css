@@ -1,0 +1,95 @@
+body{
+    background-color: rgb(243 234 227);
+}
+.flex{
+    width:45%;
+    min-height: 450px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 50px auto;
+    flex-wrap:wrap;
+   border-radius: 10px;
+} 
+
+.child{
+    width:calc(100% /2);
+    background-color: white;
+} 
+
+.flex-content{
+    display: flex;
+    flex-direction: column;  
+}
+
+.flex-price{
+    display: flex;
+}
+
+button{
+    background-color: rgb(61 129 104);
+    width: 85%;
+    height: 40px;
+    border: none;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    color:white;
+    margin-top: 20px;
+    border-radius: 10px;
+} 
+.mobile-image{
+    display: none;
+}
+button:hover{
+    background-color: rgb(61 129 104);
+} 
+i{
+color:white;
+    padding-right: 20px;
+} 
+strong{
+   color: rgb(61 129 104); margin-right: 20px;
+} 
+.image{
+    height: 450px;
+}
+
+p{
+color:rgb(151 152 161);
+line-height: 25px;
+font-size: 15px;
+}
+
+p,h3,h1,.flex-price{
+    padding-left: 7.5%;
+    padding-right: 7.5%;
+}
+
+.title{
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+strong{
+    font-size: 20px;
+}
+
+@media  (max-width: 768px) { 
+    .child{
+        width:100%;
+    }
+    button{
+        margin-bottom: 30px;
+    }
+    .mobile-image{
+        display: block;
+    }
+    .desktop-image{
+        display: none;
+    }
+  }
+
+@media  (min-width:769px) and (max-width:922px) {
+    .flex{
+        width:60%;
+    } 
+  }
